@@ -1,0 +1,38 @@
+@media(min-width:1400px){
+
+}
+
+@media(min-width:1200px) and (max-width:1399.98px){
+
+}
+
+@media(min-width:992px) and (max-width:1199.98px){
+
+}
+
+@media(min-width:768px) and (max-width:991.98px){
+
+}
+
+@media(min-width:576px) and (max-width:767.98px){
+
+}
+@media(max-width:991.98px){
+    #head #my_nav #mobile_menu ul{
+        background-color: #fff;
+    }
+    #head #my_nav #mobile_menu ul li a{
+        display: inline-block;
+        padding: 12px 15px;
+        border-top: 1px solid #E9E9E9;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 600;
+        color:#111 ;
+        text-transform: uppercase;
+    }
+    
+}
+@media(max-width:575.98px){
+
+}
