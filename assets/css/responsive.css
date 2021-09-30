@@ -11,15 +11,24 @@
 }
 
 @media(min-width:768px) and (max-width:991.98px){
-
+    #baneer .banner_slider .banner_item h2{
+        font-size: 67px;
+        padding: 10px 0;
+    }
 }
 
 @media(min-width:576px) and (max-width:767.98px){
-
+    #baneer .banner_slider .banner_item h2{
+        font-size: 42px;
+        line-height: 51px;
+        padding: 8px 0;
+    }
 }
 @media(max-width:991.98px){
-    #head #my_nav #mobile_menu ul{
+    #head #my_nav #mobile_menu .mobile_dropdown{
         background-color: #fff;
+        overflow: auto;
+        height: 280px;
     }
     #head #my_nav #mobile_menu ul li a{
         display: inline-block;
@@ -30,9 +39,68 @@
         font-weight: 600;
         color:#111 ;
         text-transform: uppercase;
+        position: relative;
     }
-    
+    #head #my_nav #mobile_menu ul li a.dropdown_icon::after{
+        content: '\f067';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 700;
+        right: 20px;
+        position: absolute;
+    }
+    #head #my_nav #mobile_menu ul li ul{
+        background-color: #f9f9f9;
+    }
+    #head #my_nav #mobile_menu ul li ul li a{
+        color: #777777;
+        padding: 10px 0 10px 30px;
+        text-transform: capitalize;
+        transition: all linear .3s;
+        -webkit-transition: all linear .3s;
+        -moz-transition: all linear .3s;
+        -ms-transition: all linear .3s;
+        -o-transition: all linear .3s;
+}
+    #head #my_nav #mobile_menu ul li ul li:hover a{
+        background-color: #273447;
+        color: #FFBC13;
+    }
+    #head #my_nav #mobile_menu ul li #mobile_dropdown_six li a i{
+        float: right;
+        margin-right: 10px;
+    }
+    #baneer .banner_slider .banner_item p{
+        display: block;
+    }
+    #baneer .banner_slider .banner_item a{
+        position: static;
+        margin-top: 15px;
+    }
+}
+@media(max-width:767.98px){
+    #head .serch_item .serch_box{
+        width: 90%;
+        font-size: 26px;
+    }
+    #head .serch_item .serch_box button{
+        font-size: 30px;
+    }
 }
 @media(max-width:575.98px){
-
+    #baneer .banner_slider .banner_item h2{
+        font-size: 35px;
+        line-height: 43px;
+        padding: 7px 0;
+    }
+}
+@media(max-width:410px){
+    #head .serch_item .serch_box{
+        font-size: 16px;
+    }
+    #head .serch_item .serch_box button{
+        font-size: 20px;
+    }
+    #baneer .banner_slider .banner_item p{
+        width: 280px;
+    }
 }

@@ -1,6 +1,11 @@
 $(function(){
     'use stirct';
+    //sidebar js
+    $('.sidebar_btn').on('click',function(){
+        $('.sidebar').toggleClass('sidebar_active')
+    })
 
+    //
     $('.serch').on('click',function(){
         $('.serch_item').addClass('active')
     })
@@ -15,4 +20,8 @@ $(function(){
         dots:true,
         dotsClass:'banner_dots',
     })
+    //jaralex
+    $('.jarallax').jarallax({
+        speed: 0.8
+    });
 })

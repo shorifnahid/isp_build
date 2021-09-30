@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Crete+Round:400,400i&amp;subset=latin-ext" rel="stylesheet">
     <!--fontwesome-->
     <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- jarallax css -->
+    <link rel="stylesheet" href="assets/css/jarallax.css">
     <!--slick css-->
     <link rel="stylesheet" href="assets/css/slick.css">
     <!--bootstrap css-->
@@ -21,12 +23,81 @@
     <title>BUILD</title>
 </head>
 <body>
+    <!-- sidebar start -->
+    <div class="sidebar">
+        <div class="sidebar_icon">
+            <span class="sidebar_btn" ></span>
+        </div>
+        <div class="sidebar_content">
+                <h3>Color Skin</h3>
+                <ul class="color_item">
+                    <li><a class="c_1" href=""></a></li>
+                    <li><a class="c_2" href=""></a></li>
+                    <li><a class="c_3" href=""></a></li>
+                    <li><a class="c_4" href=""></a></li>
+                    <li><a class="c_5" href=""></a></li>
+                    <li><a class="c_6" href=""></a></li>
+                    <li><a class="c_7" href=""></a></li>
+                    <li><a class="c_8" href=""></a></li>
+                    <li><a class="c_9" href=""></a></li>
+                    <li><a class="c_10" href=""></a></li>
+                    <li><a class="c_11" href=""></a></li>
+                    <li><a class="c_12" href=""></a></li>
+                </ul>
+                <h3>Nav</h3>
+                <ul class="nav_item">
+                    <li>Light</li>
+                    <li>Dark</li>
+                </ul>
+                <h3>Nav</h3>
+                <ul class="nav_item">
+                    <li>Light</li>
+                    <li>Dark</li>
+                </ul>
+                <h3>Nav</h3>
+                <ul class="nav_item">
+                    <li>Light</li>
+                    <li>Dark</li>
+                </ul>
+                <h3>Nav</h3>
+                <ul class="nav_item">
+                    <li>Light</li>
+                    <li>Dark</li>
+                </ul>
+                <h3>Background Image</h3>
+                <ul class="img_item">
+                    <li><img src="assets/img/bg1.jpg" alt=""></li>
+                    <li><img src="assets/img/bg2 (1).jpg" alt=""></li>
+                    <li><img src="assets/img/bg3.jpg" alt=""></li>
+                    <li><img src="assets/img/bg4.jpg" alt=""></li>
+                </ul>
+                <h3>Background Pattern</h3>
+                <ul class="img_item">
+                    <li><img src="assets/img/bg1 (1).jpg" alt=""></li>
+                    <li><img src="assets/img/bg2 (2).jpg" alt=""></li>
+                    <li><img src="assets/img/bg3 (1).jpg" alt=""></li>
+                    <li><img src="assets/img/bg4 (1).jpg" alt=""></li>
+                    <li><img src="assets/img/bg5 (1).jpg" alt=""></li>
+                    <li><img src="assets/img/bg6.jpg" alt=""></li>
+                    <li><img src="assets/img/bg7.jpg" alt=""></li>
+                    <li><img src="assets/img/bg8.jpg" alt=""></li>
+                    <li><img src="assets/img/bg9 (1).jpg" alt=""></li>
+                    <li><img src="assets/img/bg10.jpg" alt=""></li>
+                    <li><img src="assets/img/bg11.jpg" alt=""></li>
+                    <li><img src="assets/img/bg12.jpg" alt=""></li>
+                </ul>
+        </div>
+    </div>
+    <!-- sidebar end -->
+
     <!--header start-->
     <header id="head">
         <!--navbar start -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="my_nav">
             <div class="container">
-            <a class="navbar-brand" href="index.html"><img class="w-100" src="assets/img/logo-light.png" alt="logo"></a>
+            <a class="navbar-brand" href="index.html">
+                <img class="w-100 w-sm-80" src="assets/img/logo-light.png" alt="logo">
+            </a>
            
             <div class="collapse navbar-collapse d-none d-lg-block" id="main_menu">
                 <ul class="navbar-nav m-auto">
@@ -254,57 +325,68 @@
             </div>
             <div class="scrch_cart_box d-flex ms-auto">
                 <div class="serch">
-                    <button class="btn" type="button"><i class="fas fa-search"></i></button>
+                    <button class="btn p-0" type="button"><i class="fas fa-search"></i></button>
                 </div>
                 <div class="cart_box">
-                    <a href="#" data-bs-toggle="dropdown"><span class="cart">4</span></a>
-                    <div class="cart_dropdown dropdown-menu">
-                    <div class="cart_contact">
-                        <div class="cart_contact_item d-flex">
-                            <div class="cart_img">
-                                <img src="assets/img/pic-1.jpg" alt="">
+                    <a href="#" data-bs-toggle="collapse" data-bs-target="#contact_menu_one" ><span class="cart">4</span></a>
+                    <div class="cart_dropdown collapse" id="contact_menu_one">
+                        <div class="cart_dropdown_container">
+                            <div class="cart_item_box">
+                                <ul>
+                                    <li class="d-flex">
+                                        <div class="cart_img">
+                                            <a href="#">
+                                                <img src="assets/img/pic-1.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="cart_text">
+                                            <a class="d-block" href="#">Safety helmet</a>
+                                            <span>2 x $19.99</span>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="cart_img">
+                                            <a href="#">
+                                                <img src="assets/img/pic-2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="cart_text">
+                                            <a class="d-block" href="#">Safety helmet</a>
+                                            <span>2 x $19.99</span>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="cart_img">
+                                            <a href="#">
+                                                <img src="assets/img/pic-3.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="cart_text">
+                                            <a class="d-block" href="#">Safety helmet</a>
+                                            <span>2 x $19.99</span>
+                                        </div>
+                                    </li>
+                                    <li class="d-flex">
+                                        <div class="cart_img">
+                                            <a href="#">
+                                                <img src="assets/img/pic-4.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="cart_text">
+                                            <a class="d-block" href="#">Safety helmet</a>
+                                            <span>2 x $19.99</span>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
-                            <div class="cart_deattils">
-                                <a href="#">Safety helmet</a>
-                                <span>2 x $19.99</span>
+                            <div class="cart_ttl d-flex">
+                                <h4>Subtotal:</h4>
+                                <span>$114.95</span>
                             </div>
-                        </div>
-                        <div class="cart_contact_item d-flex">
-                            <div class="cart_img">
-                                <img src="assets/img/pic-1.jpg" alt="">
+                            <div class="cart_icon">
+                                <a  href="#">View Cart</a>
+                                <a href="#">Checkout </a>
                             </div>
-                            <div class="cart_deattils">
-                                <a href="#">Safety helmet</a>
-                                <span>2 x $19.99</span>
-                                <a href="#">x</a>
-                            </div>
-                        </div>
-                        <div class="cart_contact_item d-flex">
-                            <div class="cart_img">
-                                <img src="assets/img/pic-1.jpg" alt="">
-                            </div>
-                            <div class="cart_deattils">
-                                <a href="#">Safety helmet</a>
-                                <span>2 x $19.99</span>
-                            </div>
-                        </div>
-                        <div class="cart_contact_item d-flex">
-                            <div class="cart_img">
-                                <img src="assets/img/pic-1.jpg" alt="">
-                            </div>
-                            <div class="cart_deattils">
-                                <a href="#">Safety helmet</a>
-                                <span>2 x $19.99</span>
-                            </div>
-                        </div>
-                    </div> 
-                        <div class="cart_ttl d-flex">
-                            <h4>Subtotal:</h4>
-                            <span>$114.95</span>
-                        </div>
-                        <div class="cart_link">
-                            <a class="d-block" href="#">view cart</a>
-                            <a class="d-block" href="#">chekout</a>
                         </div>
                     </div>
                 </div>
@@ -313,13 +395,204 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse " id="mobile_menu">
-                <ul class="navbar-nav d-block d-lg-none">
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">home</a></li>
+                <ul class="navbar-nav d-block d-lg-none mobile_dropdown">
+                    <li>
+                        <a class="dropdown_icon" data-bs-toggle="collapse" data-bs-target="#mobile_dropdown_one" href="#">home</a>
+                        <ul class="collapse" id="mobile_dropdown_one">
+                            <li><a href="#">home 1</a></li>
+                            <li><a href="#">home 2</a></li>
+                            <li><a href="#">home 3</a></li>
+                            <li><a href="#">home 4</a></li>
+                            <li><a href="#">home 5</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="dropdown_icon" data-bs-toggle="collapse" data-bs-target="#mobile_dropdown_tow" href="#">pages</a>
+                        <ul class="collapse" id="mobile_dropdown_tow">
+                            <li><a href="#">about us</a></li>
+                            <li><a href="#">faq</a></li>
+                            <li><a href="#">career</a></li>
+                            <li><a href="#">portfolio</a></li>
+                            <li><a href="#">our team</a></li>
+                            <li><a href="#">services</a></li>
+                            <li><a href="#">galley</a></li>
+                            <li><a href="#">error</a></li>
+                            <li><a href="#">contact us</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="dropdown_icon" data-bs-toggle="collapse" data-bs-target="#mobile_dropdown_three" href="#">features</a>
+                        <ul class="collapse" id="mobile_dropdown_three">
+                            <li><a href="#">header</a></li>
+                            <li><a href="#">footer fixed</a></li>
+                            <li><a href="#">footer light</a></li>
+                            <li><a href="#">footer dark</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="dropdown_icon" data-bs-toggle="collapse" data-bs-target="#mobile_dropdown_four" href="#">product</a>
+                        <ul class="collapse" id="mobile_dropdown_four">
+                            <li><a href="#">product</a></li>
+                            <li><a href="#">product detail</a></li>
+                            <li><a href="#">shopping</a></li>
+                            <li><a href="#">wishlist</a></li>
+                            <li><a href="#">checkout</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="dropdown_icon" data-bs-toggle="collapse" data-bs-target="#mobile_dropdown_five" href="#">blog</a>
+                        <ul class="collapse" id="mobile_dropdown_five">
+                            <li><a href="#">media</a></li>
+                            <li><a href="#">list</a></li>
+                            <li><a href="#">grid</a></li>
+                            <li><a href="#">single</a></li>
+                            <li><a href="#">home5</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="dropdown_icon" data-bs-toggle="collapse" data-bs-target="#mobile_dropdown_six" href="#">elements</a>
+                        <ul class="collapse" id="mobile_dropdown_six">
+                            <li><a class="" href="#">animation
+                                <i class="text-end fab fa-facebook"></i>
+                            </a>
+                            </li>
+                            <li>
+                                <a href="#">Accordians
+                                    <i class="fas fa-bars"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Alert box
+                                    <i class="far fa-bell"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Buttons
+                                    <i class="fas fa-toggle-on"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">clients
+                                    <i class="fas fa-users"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-toggle-on"></i>
+                                    Clients slider
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-sliders-h"></i>
+                                    Carousel sliders
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-calculator"></i>
+                                    Counters
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-ellipsis-h"></i>
+                                    Dividers
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="far fa-map"></i>
+                                    Google map
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-ellipsis-h"></i>
+                                    Icons Shortcodes
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="far fa-square"></i>
+                                    Icon-box
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="far fa-square"></i>
+                                    Icon box styles
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="far fa-address-card"></i>
+                                    Image box content
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-image"></i>
+                                    Images effects
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-list-ol"></i>
+                                    List group
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="far fa-window-maximize"></i>
+                                    Modal popup
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-terminal"></i>
+                                    Pagination
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-dollar-sign"></i>
+                                    Pricing table
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="far fa-plus-square"></i>
+                                    Toggles
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"> <i class="far fa-window-maximize"></i>
+                                    Tooltips
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-list"></i>
+                                    Tabs
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-table"></i>
+                                    Table
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitch"></i>
+                                    Testimonials
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fab fa-twitch"></i>
+                                    Testimonials grid
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-ellipsis-h"></i>
+                                    Title-separators
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-video"></i>
+                                    Video
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fas fa-retweet"></i>
+                                    Widgets
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
             
@@ -348,7 +621,7 @@
     <!--banner section start -->
     <section id="baneer">
         <div class="slick_slider">
-            <div class="banner_slider" style="background-image: url(assets/img/slide1.jpg);">
+            <div class="banner_slider jarallax" style="background-image: url(assets/img/slide1.jpg);">
                 <div class="container">
                     <div class="banner_item">
                         <h2> <span>Your Dream</span> house  </h2>
@@ -358,7 +631,7 @@
                     </div>
                 </div>
             </div>
-            <div class="banner_slider" style="background-image: url(assets/img/slide2.jpg);">
+            <div class="banner_slider jarallax" style="background-image: url(assets/img/slide2.jpg);">
                 <div class="container">
                     <div class="banner_item">
                         <h2> <span>Your Dream</span> house  </h2>
@@ -368,7 +641,7 @@
                     </div>
                 </div>
             </div>
-            <div class="banner_slider" style="background-image: url(assets/img/slide3.jpg);">
+            <div class="banner_slider jarallax" style="background-image: url(assets/img/slide3.jpg);">
                 <div class="container">
                     <div class="banner_item">
                         <h2> <span>Your Dream</span> house  </h2>
@@ -381,6 +654,7 @@
         </div>
     </section>
     <!-- banner section end -->
+    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis voluptatibus alias earum assumenda illo neque hic quaerat doloremque aperiam quae possimus id eligendi suscipit exercitationem quam, a mollitia architecto. Totam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis quidem autem provident omnis similique nisi minima dolore quisquam suscipit pariatur! Atque ipsum perferendis eius voluptates tenetur possimus architecto, cumque, quae numquam quidem voluptas. Commodi molestiae dolore repellat maxime veritatis, est quaerat, esse, praesentium illum qui sapiente sunt. Consequuntur, nam obcaecati! Vero quidem provident possimus maxime! Dolores minima officia optio obcaecati animi sapiente explicabo officiis totam nulla quasi mollitia facere numquam recusandae impedit sunt, aliquam esse enim voluptas, harum sed dolorum, blanditiis magnam? Delectus, laudantium, sunt pariatur minus assumenda incidunt numquam saepe necessitatibus culpa amet deleniti. Officiis, tempore ratione! Quis fugiat excepturi velit obcaecati odit ipsum rem ipsam ut quas eveniet nesciunt, reprehenderit amet iusto officiis modi. Impedit id ea accusantium, quidem repellendus esse voluptas fuga atque architecto omnis porro laudantium assumenda, quod odit cumque similique totam? Iste quae magnam minus eum, ullam omnis repellat, cum eos nihil voluptatum rerum! Accusamus quibusdam natus repudiandae mollitia nisi magni expedita totam explicabo eveniet earum minima deleniti deserunt iste nobis voluptatibus, quam neque ab exercitationem soluta cupiditate velit dolorum. Tempora, eum! Officiis laborum magnam fuga enim mollitia quos laboriosam dolorem laudantium! Modi nostrum provident quod totam, accusantium enim magnam cumque officia recusandae odio. Quia assumenda reiciendis dignissimos voluptatum, nobis porro non sapiente voluptatibus vero dolor veritatis molestias inventore distinctio, eligendi atque alias ad ab dolore libero, eius hic error. Ea ullam ab eligendi dolores, ipsum veniam soluta nemo reiciendis officiis at? Eius provident quia consequatur impedit pariatur animi quas voluptates rem vitae cumque, adipisci quod vel cupiditate reiciendis repellendus quo voluptatem doloribus. Temporibus, ipsum, est quasi odit ea enim in quidem corporis officiis eos voluptate, sequi magnam. Veritatis impedit ipsam vitae nisi laudantium repudiandae in libero dolores officiis ratione saepe, inventore perferendis, repellendus laborum ullam placeat officia nemo voluptas dolorem natus excepturi. Quidem, pariatur saepe optio nostrum tempora consectetur repellat laudantium eligendi quod vel, tempore laborum quos esse ipsa cumque aperiam est quaerat autem. Non assumenda, beatae tempora corporis, sed aliquid itaque laboriosam dolorem repellat nesciunt possimus.</p>
 
 
 
@@ -390,11 +664,17 @@
     <script src="assets/js/jquery-3.6.0.min.js"></script>
     <!--bootstrap js-->
     <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!-- jarallax js -->
+    <script src="assets/js/jarallax.min.js"></script>
     <!--slick js-->
     <script src="assets/js/slick.min.js"></script>
     <!--counterup js-->
     <script src="assets/js/jquery.counterup.min.js"></script>
     <!--main js-->
     <script src="assets/js/app.js"></script>
+
+
+    
+
 </body>
 </html>
