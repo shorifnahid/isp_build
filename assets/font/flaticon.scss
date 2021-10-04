@@ -1,0 +1,53 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?6481e88d2ef37fa9e30cfe3a0fff6a70") format("truetype"),
+url("./flaticon.woff?6481e88d2ef37fa9e30cfe3a0fff6a70") format("woff"),
+url("./flaticon.woff2?6481e88d2ef37fa9e30cfe3a0fff6a70") format("woff2"),
+url("./flaticon.eot?6481e88d2ef37fa9e30cfe3a0fff6a70#iefix") format("embedded-opentype"),
+url("./flaticon.svg?6481e88d2ef37fa9e30cfe3a0fff6a70#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "sea-dyke": "\f101",
+    "brick-wall": "\f102",
+    "golden-gate-bridge": "\f103",
+    "bank": "\f104",
+    "work-tools": "\f105",
+    "excavator": "\f106",
+    "taxi": "\f107",
+);
+
+.flaticon-sea-dyke:before {
+    content: map-get($flaticon-map, "sea-dyke");
+}
+.flaticon-brick-wall:before {
+    content: map-get($flaticon-map, "brick-wall");
+}
+.flaticon-golden-gate-bridge:before {
+    content: map-get($flaticon-map, "golden-gate-bridge");
+}
+.flaticon-bank:before {
+    content: map-get($flaticon-map, "bank");
+}
+.flaticon-work-tools:before {
+    content: map-get($flaticon-map, "work-tools");
+}
+.flaticon-excavator:before {
+    content: map-get($flaticon-map, "excavator");
+}
+.flaticon-taxi:before {
+    content: map-get($flaticon-map, "taxi");
+}
