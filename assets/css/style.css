@@ -67,7 +67,7 @@ button:focus{
     font-weight: 400;
     line-height: 24px;
     color: #767676;
-    width: 800px;
+    max-width: 800px;
     margin: 0 auto 10px;
     padding-top: 10px;
 
@@ -1006,7 +1006,7 @@ button:focus{
     left: 20px;
 }
 #content .content_container .content_dropdown_item .content_dropdown{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 #content .content_container .content_dropdown_item .content_dropdown a{
     display: block;
@@ -1018,12 +1018,40 @@ button:focus{
     padding: 15px 40px 15px 15px;
     color: #fff;
     text-transform: uppercase;
+    position: relative;
+}
+#content .content_container .content_dropdown_item .content_dropdown a::before{
+    content: "\f067";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 700;
+    position: absolute;
+    right: 20px;
+}
+#content .content_container .content_dropdown_item .content_text p{
+    color: #fff;
+    padding: 15px 0;
+    font-size: 14px;
+    font-weight: 400;
+   
 }
 #content .content_market{
     background-image: url(../img/bg9.jpg);
     background-position: center;
     background-size: cover;
     padding: 50px 30px;
+    position: relative;
+    z-index: 1;
+}
+#content .content_market::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0.7;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 #content .content_market p{
     color: #fff;
@@ -1036,6 +1064,9 @@ button:focus{
 #blog{
     padding: 80px 0 50px;
     background-color: #f5f6f6;
+}
+#blog .blog_conten{
+    margin-bottom:40px ;
 }
 #blog .blog_conten .blog_img{
     overflow: hidden;
@@ -1175,3 +1206,195 @@ button:focus{
     -webkit-filter: grayscale(0);
 }
 /* client css end */
+
+/* contact css start */
+#contact{
+    background-color: #FFBC13;
+}
+#contact .contact_item{
+    padding: 15px 10px;
+    border: 1px solid #333333;
+    margin: 20px 0;
+ 
+}
+#contact .contact_item .contact_icon{
+    width: 60px;
+    margin-right:10px ;
+    text-align: center;
+}
+#contact .contact_item .contact_icon i{
+    font-size: 45px;
+    display: block;
+}
+#contact .contact_item .contact_info h5{
+    font-size: 16px;
+    font-family: roboto,sans-serif;
+    font-weight: 600;
+    color: #1a1a1a;
+    line-height: 22px;
+    text-transform: uppercase;
+}
+#contact .contact_item .contact_info p{
+    font-size: 13px;
+    font-weight: 400;
+    color: #1a1a1a;
+    line-height: 20px;
+}
+/* contact css end */
+
+/* footer_top css start */
+#footer_top{
+    background-color: #1a1a1a;
+    padding: 50px 0;
+}
+#footer_top .footer_section_ttl h3{
+    font-size: 18px;
+    font-family: roboto,sans-serif;
+    font-weight: 600;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    padding-bottom:15px ;
+    position: relative;
+}
+#footer_top .footer_section_ttl h3::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border: 3px solid #fff;
+    bottom: 0;
+    left: 0;
+}
+#footer_top .footer_section_ttl h3::after{
+    content: '';
+    position: absolute;
+    background-color:#FFBC13;
+    width: 70px;
+    height: 3px;
+    bottom: -6px;
+    left: 18px;
+    margin: 10px 0;
+    
+}
+#footer_top .footer_top_item {
+    margin-bottom: 40px;
+}
+#footer_top .footer_top_item .footer_logo{
+    margin: 15px 0;
+}
+#footer_top .footer_top_item p{
+    font-size:13px ;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 24px;
+    color: #999;
+}
+#footer_top .footer_top_item .footer_content .footer_content_item{
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+#footer_top .footer_top_item .footer_content .footer_content_item .footer_box{
+    width: 50px;
+    height: 60px;
+    background-color: #0e0e0e;
+    padding-top: 5px;
+}
+#footer_top .footer_top_item .footer_content .footer_content_item .footer_box span{
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #999;
+}
+#footer_top .footer_top_item .footer_content .footer_content_item .footer_box span.date{
+    font-size: 11px;
+    color: #fff;
+    text-transform: uppercase;
+}
+#footer_top .footer_top_item .footer_content .footer_content_item .footer_info{
+    margin-left: 25px;
+}
+#footer_top .footer_top_item .footer_content .footer_content_item .footer_info h6{
+    font-size: 13px;
+    font-family: roboto,sans-serif;
+    font-weight: bold;
+    line-height: 16px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+#footer_top .footer_top_item .footer_content .footer_content_item .footer_info ul li{
+    display: inline-block;
+    font-size: 12px;
+    font-family: 'Crete Round', serif;
+    color: #999;
+    line-height: 20px;
+}
+#footer_top .footer_top_item  .footer_link ul li{
+    font-size: 13px;
+    padding: 10px 10px 10px 15px;
+    color: #999;
+    border-bottom: 1px dashed rgba(102,102,102,0.3);
+}
+#footer_top .footer_top_item .footer_link ul li a{
+    color: #999;
+    font-weight: 400;
+}
+#footer_top .footer_top_item .searc_email{
+    margin-bottom: 40px;
+}
+#footer_top .footer_top_item .searc_email input{
+    background-color: #0e0e0e;
+    border-color: #2d2d2d;
+    color: #767676;
+    text-transform: uppercase;
+}
+#footer_top .footer_top_item .searc_email button{
+    background-color:#FFBC13 ;
+    border-color: transparent;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 14px;
+}
+#footer_top .footer_top_item .footer_social_icon  a{
+    display: inline-block;
+    border: 1px solid #4a4c4c;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    color: #454747;
+}
+/* footer_top css end */
+
+/* footer_bottom css start */
+#footer_bottom{
+    background-color: #0e0e0e;
+    padding-bottom:30px ;
+}
+#footer_bottom .footer_bg_img{
+    position: relative;
+    height: 15px;
+    background-color:#FFBC13 ;
+    width: 100%;
+    background-image: url(../img/footer-strip.png);
+    background-position: center;
+}
+#footer_bottom .footer_bottom_left,
+#footer_bottom .footer_bottom_right{
+    padding-top:30px ;
+}
+#footer_bottom .footer_bottom_left span{
+    font-size: 13px;
+    color: #787878;
+}
+#footer_bottom .footer_bottom_right ul li{
+    display: inline-block;
+}
+#footer_bottom .footer_bottom_right ul li a{
+    color: #787878;
+    font-size: 13px;
+    line-height: 20px;
+
+}
+/* footer_bottom css end */

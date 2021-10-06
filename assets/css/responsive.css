@@ -15,6 +15,7 @@
         font-size: 67px;
         padding: 10px 0;
     }
+ 
 }
 
 @media(min-width:576px) and (max-width:767.98px){
@@ -76,6 +77,9 @@
         position: static;
         margin-top: 15px;
     }
+    #company .company_content h2{
+        font-size: 56px;
+    }
 }
 @media(max-width:767.98px){
     #head .serch_item .serch_box{
@@ -84,6 +88,9 @@
     }
     #head .serch_item .serch_box button{
         font-size: 30px;
+    }
+    #about .about_section_ttl{
+        margin-top: 40px;
     }
 }
 @media(max-width:575.98px){

@@ -26,13 +26,89 @@ $(function(){
         slidesToShow:5,
         prevArrow:'<i class="fas fa-chevron-left project_arrow project_left"></i>',
         nextArrow:'<i class="fas fa-chevron-right project_arrow project_right"></i>',
+        responsive:[
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow:3,
+                }
+              },
+               {
+                breakpoint: 576,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+        ]
     })
+
+    //
+    $('.testimonial_slick').slick({
+        slidesToShow:3,
+        arrows:false,
+        infinite:false,
+        responsive:[
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow:2,
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                  slidesToShow: 1,
+                }
+              }
+            ]
+    })
+
+    //
+    $('.clinent_slick').slick({
+        slidesToShow:5,
+        arrows:false,
+        responsive:[
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow:4,
+                }
+              },
+              {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow:3,
+                }
+              },
+              {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow:2,
+                }
+              }
+            ]
+    })
+
     //jaralex
     $('.jarallax').jarallax({
         speed: 0.8
     });
 
     //
+    $('.counter').counterUp({
+        delay: 10,
+        time: 1000
+    });
+
+    //progres bar
  
         $('#bar1').barfiller({barColor:'#FFBC13'});
         $('#bar2').barfiller({barColor:'#FFBC13'});
@@ -41,18 +117,9 @@ $(function(){
         $('#bar5').barfiller({barColor:'#FFBC13'});
         $('#bar6').barfiller({barColor:"#FFBC13"});
         $('#bar7').barfiller({barColor:"#FFBC13"});
-    
-    //
-    $('.testimonial_slick').slick({
-        slidesToShow:3,
-        arrows:false,
-        infinite:false,
-    })
 
-    //
-    $('.clinent_slick').slick({
-        slidesToShow:5,
-        arrows:false,
-    })
+  
+
+   
 
 })
